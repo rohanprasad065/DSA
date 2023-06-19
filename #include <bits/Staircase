@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+
+int main()
+{
+    int a,v ,c,i,j,k, x;
+    cin>>a;
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<a-i-1;j++)
+        {
+            cout<<" " ; 
+        }
+        for(k=i;k>=0;k--)
+        {
+            cout<<"#";
+            
+        }
+        cout<<"\n";
+        
+    }
+    return 0;
+}
