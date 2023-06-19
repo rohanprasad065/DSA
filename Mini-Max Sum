@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+void swa (long*z,long*x);
+int main ()
+{
+    long a,b,d,j,i,s=0,r=0;
+    vector <long> v ;
+    for(i=0;i<5;i++)
+    {
+        cin>>a;
+        v.push_back(a);
+        
+    }
+    for(i=0;i<5;i++){
+        for(j=i+1;j<5;j++){
+            if( v[i]>v[j]){
+                swa(&v[i],&v[j]);
+            }
+            
+        }
+    }
+    for(i=0;i<4;i++){
+        s=s+v[i];
+    }
+    for(i=1;i<5;i++){
+        r=r+v[i];
+    }
+    cout << s<<" "<<r;
+    
+     
+        
+    
+}
+void swa (long*z,long*x)
+{
+    long t;
+    t=*z;
+    *z=*x;
+    *x=t;
+}
