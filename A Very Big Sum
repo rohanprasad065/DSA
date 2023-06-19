@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+void sum (int a);
+int main()
+{
+    int a;
+    cin>>a;
+    
+    sum(a);
+}
+
+void sum (int a)
+{
+    int i;
+    long b[a],c,s=0;
+    vector <long> v;
+    for(i=0;i<a;i++)
+    {
+        cin>>c;
+        v.push_back(c);
+    }
+    for(i=0;i<a;i++)
+    {
+       s=s+v[i];
+    }
+    cout<<s;
+    
+}
