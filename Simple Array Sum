@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+void sum (int a);
+void arry (int b);
+int main ()
+{int b;
+    cin>>b;
+    arry(b);
+    
+}
+ void arry (int b)
+{
+    int a[b],j,z,x,s=0;
+    for (j=0; j<=b-1;j++)
+    {
+        cin>>a[j];
+        
+    }
+    for(z=0;z<=b-1;z++)
+    {
+        s=s+a[z];
+    }
+    cout<<s;
+    
+}
