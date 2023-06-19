@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include <vector>
+
+using namespace std;
+
+int main ()
+{
+    float  a,b,i,j,c=0,d=0,e=0;
+    cin>>a;
+    vector<long> v;
+    cout<<fixed;
+    for(i=0;i<a;i++)
+    {
+        cin>>b;
+        if(b==0)
+        {
+            c++;
+        }
+        else if (b<0)
+        {
+            d++;
+        }
+        else
+        {
+            e++;
+        }
+        v.push_back(b);
+    }  
+    cout<<setprecision(6)<<e/a<<endl;
+    cout<<setprecision(6)<<d/a<<endl;
+    cout<<setprecision(6)<<c/a<<endl;  
+}
